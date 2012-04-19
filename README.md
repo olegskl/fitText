@@ -8,13 +8,12 @@ Usage
 -----
 
 fitText can be applied to any non-removed Raphael text element.
-
 Non-text elements (i.e. path) will be ignored.
 
 Accepts the following parameters:
 
-* **width** - _mandatory_ width in pixels
-* **text** - _optional_ text to set
+* `width` - _mandatory_ width in pixels
+* `text` - _optional_ text to set
 
 Example
 -----
@@ -40,8 +39,6 @@ The fitText method is chainable
 
 License
 -------
-
-Copyright (C) 2012 Oleg Sklyanchuk
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
