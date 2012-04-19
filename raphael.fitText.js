@@ -27,7 +27,7 @@
      * Note 1: Doesn't handle line breaks yet.
      * Note 2: Only fits to width.
      * @param {Number} width A width to which the text should fit.
-     * @param {String} [text] An text to set. Same as el.attr('text', text);
+     * @param {String} [text] A text to set. Same as el.attr('text', text);
      * @returns {RaphaelElement} Raphael element object with type "text".
      */
     Raphael.el.fitText = function(width, text) {
@@ -37,7 +37,7 @@
         }
         // Must have width:
         if (typeof width !== 'number') {
-            return this; // < maybe throw an error instead?
+            return this; // < Perhaps throw an error instead?
         }
         // When text is unavailable or incorrectly defined
         // just use what is already in the 'text' attribute:
