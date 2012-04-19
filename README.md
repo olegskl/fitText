@@ -18,19 +18,19 @@ Accepts the following parameters:
 Example
 -----
 
-Working example available at http://jsfiddle.net/sCEBD/
+Working example available at http://jsfiddle.net/sCEBD/1/
 
 Fit existing text to width
 
-    paper.text(50, 50, 'Hello world!').fitText(30);
+    paper.text(150, 50, 'Hello world!').fitText(30);
 
 Update an existing text and fit to width
 
-    paper.text(50, 50, 'Hello world!').fitText(40, 'Hello worrrrrlllldddd!');
+    paper.text(150, 80, 'Hello world!').fitText(40, 'Hello worrrrrlllldddd!');
 
 The fitText method is chainable
 
-    paper.text().attr({
+    paper.text(150, 120, 'Hello world!').attr({
         'font-size': 30
     }).fitText(50, 'Hello worrrrrlllldddd!').attr({
         'fill': 'red'
