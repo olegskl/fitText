@@ -64,7 +64,8 @@
             // Average character width is not sufficient
             // to determine the exact length of a string
             // that fits the width, so we adjust a bit:
-            while (this.getBBox().width > width && textThatFits.length > 0) {
+            var w = this.getBBox().width;
+            while (w > width && textThatFits.length > 0) {
                 textThatFits = textThatFits.slice(0, -1);
                 this.attr('text', textThatFits + '...');
             }
