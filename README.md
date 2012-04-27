@@ -12,17 +12,21 @@ Non-text elements (i.e. path) will be ignored.
 
 Accepts the following parameters:
 
-* `width` - _mandatory_ width in pixels
+* `width` - _optional_ width in pixels (defaults to paper width)
 * `text` - _optional_ text to set
 
 Example
 -----
 
-Working example available at http://jsfiddle.net/sCEBD/1/
+Working example available at http://jsfiddle.net/sCEBD/2/
 
 Fit existing text to width
 
     paper.text(150, 50, 'Hello world!').fitText(30);
+
+Fit existing text to paper width (since version 0.2.0)
+
+    paper.text(150, 50, 'Hello world!').fitText();
 
 Update an existing text and fit to width
 
@@ -36,6 +40,12 @@ The fitText method is chainable
         'fill': 'red'
     });
 
+
+Changelog
+-------
+
+### 0.2.0
+* The `width` argument is now optional. Defaults to paper width.
 
 License
 -------
